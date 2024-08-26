@@ -258,7 +258,7 @@ img {
 }
 
 .image-container img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .image-container:last-child {
