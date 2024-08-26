@@ -1,5 +1,10 @@
 {
+  "homepage": "https://RKDH2.github.io/Atom/",
+  "scripts": {
+    "deploy": "gh-pages -d public"
+  },
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1"
   }
 }
