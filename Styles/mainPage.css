@@ -134,7 +134,7 @@ body {
 
 body {
   margin-top: 70px;
-  background-image: url("./Image/gameBack1.jpg");
+  background-image: url("../Image/gameBack1.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
