@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
+/* 기본 리셋 */
 html,
 body,
 div,
@@ -89,7 +90,7 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -103,17 +104,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -121,6 +126,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -190,46 +196,7 @@ body {
   background-color: rgba(222, 222, 222, 0.6);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
-.card {
-  width: 200px;
-  height: 300px;
-  border-radius: 15px;
-  background-color: rgb(195, 197, 201);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.media {
-  width: 110px;
-  height: 100px;
-  border-radius: 10px;
-}
-.heading {
-  font-size: 25px;
-  margin-left: 17px;
-  font-weight: bold;
-}
-.description {
-  font-size: 12px;
-  margin-left: 25px;
-}
-.actionButton {
-  margin-top: 10px;
-  margin-left: 5px;
-  width: 110px;
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.62);
-  font-size: 10px;
-  display: flex;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
+/* 카드 컨테이너 및 박스 스타일 */
 .card-container {
   width: 100vw;
   display: flex;
@@ -240,13 +207,14 @@ body {
   margin-top: 50px;
 }
 
+.box-container {
+  text-align: center;
+}
+
+/* 이미지 스타일 */
 img {
   width: 100%;
   height: 100%;
-}
-
-.box-container {
-  text-align: center;
 }
 
 .KWANGSUNG-IMG {
@@ -261,22 +229,90 @@ img {
   transform: scale(1.05);
 }
 
-.image-container:last-child {
-  margin-bottom: 80px;
-}
-
 .Txt {
   width: 70%;
   margin-top: 80px;
 }
 
-#carouselExampleCaptions {
-  width: 40%;
-  height: 100%;
+.txt-last {
+  margin-bottom: 100px;
 }
 
-.font {
-  color: yellow;
-  font-size: 35px;
-  font-weight: 600;
+.footer {
+  background-color: #000000; /* 하단 바 배경 색상 */
+  height: 50px; /* 하단 바 높이 설정 */
+  width: 100%;
+  margin-top: 10px;
+  position: fixed;
+  bottom: 0; /* 하단에서 0px 떨어지게 설정 */
+  left: 0; /* 왼쪽에서 0px 떨어지게 설정 */
+  z-index: 1000; /* 상단 바와 동일한 z-index로 설정 */
+  display: flex;
+  justify-content: center; /* 텍스트를 중앙에 정렬 */
+  align-items: center; /* 텍스트를 수직으로 중앙 정렬 */
+  color: #ffffff; /* 텍스트 색상 */
+  font-size: 14px; /* 텍스트 크기 */
+  font-family: "Jua";
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .icon-img img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-item-btn {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .card-container {
+    gap: 50px;
+    margin-top: 30px;
+  }
+
+  .KWANGSUNG-IMG {
+    width: 90%;
+  }
+
+  .Txt {
+    width: 80%;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .icon-img img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-item-btn {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .card-container {
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .KWANGSUNG-IMG {
+    width: 100%;
+  }
+
+  .Txt {
+    width: 90%;
+    margin-top: 40px;
+  }
 }

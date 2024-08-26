@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
 body {
   font-family: "Jua";
   margin: 0;
@@ -37,10 +38,9 @@ body {
   border: none;
   text-decoration: none;
   font-size: 18px;
-  font-family: "Jua";
-  font-style: normal;
   transition: 0.25s;
 }
+
 .nav-item-btn:hover {
   background-color: rgba(222, 222, 222, 0.6);
 }
@@ -68,32 +68,12 @@ body {
 .nav-icons .icon:hover {
   transform: scale(1.1); /* 아이콘 호버 효과 */
 }
-.navbar .logo img {
-  height: 40px; /* 로고 이미지 높이 */
-}
-
-.nav-icons {
-  display: flex;
-  align-items: center;
-}
-
-.nav-icons .icon {
-  margin-left: 15px;
-  height: 30px; /* 아이콘 이미지 높이 */
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.nav-icons .icon:hover {
-  transform: scale(1.1); /* 아이콘 호버 효과 */
-}
 
 /* 본문 내용의 컨테이너 스타일 */
 .container {
   text-align: center;
   width: 100%;
   margin-top: 60px; /* 상단 바 높이만큼 여백 추가 */
-  font-family: "Jua";
 }
 
 /* 헤더 스타일 */
@@ -125,7 +105,6 @@ body {
   border: none;
   border-radius: 5px;
   transition: transform 0.3s ease;
-  font-family: "Jua";
 }
 
 #searchInput:focus {
@@ -142,7 +121,6 @@ button {
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  font-family: "Jua";
 }
 
 button:hover {
@@ -202,5 +180,80 @@ button:hover {
   align-items: center; /* 텍스트를 수직으로 중앙 정렬 */
   color: #373c43; /* 텍스트 색상 */
   font-size: 14px; /* 텍스트 크기 */
-  font-family: "Jua";
+}
+
+/* 미디어 쿼리: 태블릿 및 작은 화면 (최대 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .icon-img img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-item-btn {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  #searchInput {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+
+  .footer {
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+/* 미디어 쿼리: 모바일 (최대 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .icon-img img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-item-btn {
+    font-size: 14px;
+    padding: 8px 10px;
+    margin: 5px;
+  }
+
+  #searchInput {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .footer {
+    height: 30px;
+    font-size: 10px;
+  }
 }

@@ -128,6 +128,96 @@
         max-width: 100%;
         border-radius: 8px;
       }
+
+      .footer {
+        background-color: #000000; /* 하단 바 배경 색상 */
+        height: 50px; /* 하단 바 높이 설정 */
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 10px;
+        bottom: 0; /* 하단에서 0px 떨어지게 설정 */
+        left: 0; /* 왼쪽에서 0px 떨어지게 설정 */
+        z-index: 1000; /* 상단 바와 동일한 z-index로 설정 */
+        display: flex;
+        justify-content: center; /* 텍스트를 중앙에 정렬 */
+        align-items: center; /* 텍스트를 수직으로 중앙 정렬 */
+        color: #ffffff; /* 텍스트 색상 */
+        font-size: 14px; /* 텍스트 크기 */
+        font-family: "Jua";
+      }
+
+      /* 미디어 쿼리: 태블릿 및 작은 화면 (최대 768px) */
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          height: auto;
+          padding: 10px;
+        }
+
+        .list-menu {
+          gap: 10px;
+          position: static;
+          transform: none;
+          margin-top: 10px;
+        }
+
+        .icon-img img {
+          width: 40px;
+        }
+
+        .nav-item-btn {
+          font-size: 1em;
+        }
+
+        .container {
+          margin: 80px auto 20px;
+          padding: 15px;
+        }
+
+        h2 {
+          font-size: 1.2em;
+        }
+
+        ul li {
+          font-size: 0.9em;
+        }
+      }
+
+      /* 미디어 쿼리: 모바일 (최대 480px) */
+      @media (max-width: 480px) {
+        .navbar {
+          padding: 5px;
+        }
+
+        .list-menu {
+          gap: 8px;
+          position: static;
+          transform: none;
+          margin-top: 10px;
+        }
+
+        .icon-img img {
+          width: 35px;
+        }
+
+        .nav-item-btn {
+          font-size: 0.9em;
+          padding: 5px;
+        }
+
+        .container {
+          margin: 60px auto 20px;
+          padding: 10px;
+        }
+
+        h2 {
+          font-size: 1em;
+        }
+
+        ul li {
+          font-size: 0.8em;
+        }
+      }
     </style>
   </head>
   <body>
@@ -221,6 +311,10 @@
         <p>최신 버전을 다운로드하려면 아래 링크를 클릭하세요:</p>
         <a href="../index.html">게임 다운로드 링크</a>
       </section>
+      <div class="footer">
+        <p>&copy; 2024 ATOM 2.0 Project</p>
+        <!-- 저작권 정보 추가 -->
+      </div>
     </div>
 
     <script>
