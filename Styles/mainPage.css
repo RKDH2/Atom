@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-top: 70px;
+  background-image: url("/Image/gameBack1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+
+.navbar {
+  padding: 0px 30px 0px 10px;
+  width: 100vw;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  box-sizing: content-box;
+  z-index: 1000;
+}
+
+.navbar.active {
+  border-bottom: 2px solid gray;
+}
+
+.icon-img img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.nav-item-btn {
+  padding: 10px 15px;
+  background-color: #ffffff;
+  color: rgb(66, 66, 66);
+  margin: 0 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Jua";
+  font-style: normal;
+  transition: 0.25s;
+}
+
+.nav-item-btn:hover {
+  background-color: rgba(222, 222, 222, 0.6);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+.card {
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: rgb(195, 197, 201);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.media {
+  width: 110px;
+  height: 100px;
+  border-radius: 10px;
+}
+.heading {
+  font-size: 25px;
+  margin-left: 17px;
+  font-weight: bold;
+}
+.description {
+  font-size: 12px;
+  margin-left: 25px;
+}
+.actionButton {
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 110px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.62);
+  font-size: 10px;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.box-container {
+  text-align: center;
+}
+
+.KWANGSUNG-IMG {
+  width: 80%;
+}
+
+.image-container img {
+  transition: all 0.3s;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.image-container:last-child {
+  margin-bottom: 80px;
+}
+
+.Txt {
+  width: 70%;
+  margin-top: 80px;
+}
+
+#carouselExampleCaptions {
+  width: 40%;
+  height: 100%;
+}
+
+.font {
+  color: yellow;
+  font-size: 35px;
+  font-weight: 600;
+}
