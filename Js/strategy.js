@@ -58,10 +58,10 @@ const suggestionsData = [
   "최종보스",
 ];
 
-// 검색창에 키를 입력했을 때 이벤트 리스너 추가
-document
-  .getElementById("searchInput")
-  .addEventListener("keyup", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+
+  searchInput.addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
       // Enter 키를 눌렀을 때 검색 함수 호출
       search();
@@ -69,6 +69,16 @@ document
     showSuggestions(); // 제안 목록 표시
     showQuestions(); // 질문 목록 표시
   });
+
+  // 페이지가 로드되면 'Enter' 키를 누른 것처럼 처리
+  const enterEvent = new KeyboardEvent("keyup", {
+    key: "Enter",
+    keyCode: 13,
+    which: 13,
+    bubbles: true,
+  });
+  searchInput.dispatchEvent(enterEvent);
+});
 
 // 검색 기능을 수행하는 함수
 function search() {

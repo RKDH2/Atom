@@ -29,15 +29,30 @@ const suggestionsData = [
   "게임 플레이 후기",
 ];
 
-document
-  .getElementById("searchInput")
-  .addEventListener("keyup", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+
+  // 페이지 로드 시와 사용자가 키를 입력할 때 이벤트 처리
+  function handleKeyup(event) {
     if (event.key === "Enter") {
-      search();
+      search(); // Enter 키를 눌렀을 때 검색 함수 호출
     }
-    showSuggestions();
-    showQuestions();
+    showSuggestions(); // 제안 목록 표시
+    showQuestions(); // 질문 목록 표시
+  }
+
+  // keyup 이벤트 리스너 추가
+  searchInput.addEventListener("keyup", handleKeyup);
+
+  // 페이지가 로드되면 'Enter' 키가 눌린 것처럼 처리
+  const enterEvent = new KeyboardEvent("keyup", {
+    key: "Enter",
+    keyCode: 13,
+    which: 13,
+    bubbles: true,
   });
+  searchInput.dispatchEvent(enterEvent);
+});
 
 function search() {
   const query = document.getElementById("searchInput").value.toLowerCase();
