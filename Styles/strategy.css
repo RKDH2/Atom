@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
   box-sizing: content-box;
 }
@@ -40,8 +40,8 @@ body {
 
 .nav-item-btn {
   padding: 10px 15px;
-  background-color: #000000;
-  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  color: rgb(66, 66, 66);
   margin: 0 15px;
   cursor: pointer;
   border-radius: 5px;
