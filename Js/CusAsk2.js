@@ -54,7 +54,6 @@ function search() {
     resultsContainer.innerHTML = "<p>No results found.</p>";
   } else {
     results.forEach((item) => {
-      ㅁㅈ;
       const resultItem = document.createElement("div");
 
       let descriptionContent = item.description;
