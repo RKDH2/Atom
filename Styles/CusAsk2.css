@@ -1,23 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
-
 body {
-  font-family: "Jua";
+  font-family: "Jua", sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #000;
+  color: #333;
+  position: relative;
+  background: url("https://i.pinimg.com/736x/0e/e3/3a/0ee33a004930bcb28d3cabd6a6a8dd80.jpg")
+    repeat 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: moveBackground 30s linear infinite;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* 상단 바 스타일 */
 .navbar {
   padding: 0px 30px 0px 10px;
   width: 100vw;
-  height: 70px;
+  height: 78px;
   position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
+  background-color: #f0f0f0;
   color: rgb(0, 0, 0);
   box-sizing: content-box;
 }
@@ -42,7 +52,6 @@ body {
   font-style: normal;
   transition: 0.25s;
 }
-
 .nav-item-btn:hover {
   background-color: rgba(222, 222, 222, 0.6);
 }
@@ -51,6 +60,25 @@ body {
   border-bottom: 2px solid gray;
 }
 
+.navbar .logo img {
+  height: 40px; /* 로고 이미지 높이 */
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icons .icon {
+  margin-left: 15px;
+  height: 30px; /* 아이콘 이미지 높이 */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nav-icons .icon:hover {
+  transform: scale(1.1); /* 아이콘 호버 효과 */
+}
 .navbar .logo img {
   height: 40px; /* 로고 이미지 높이 */
 }
@@ -79,21 +107,22 @@ body {
   font-family: "Jua";
 }
 
-/* 헤더 스타일 */
 .header {
-  background-color: #3f3d3d;
-  padding: 20px 0;
-  animation: fadeIn 2s ease-in-out;
-  font-family: "Jua";
-  font-style: normal;
-  font-weight: 70;
+  max-width: 800px;
+  margin: 100px auto 20px;
+  background: rgba(255, 211, 211, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
 }
 
 .title {
-  color: #ffffff;
+  color: #000000;
 }
 
-/* 검색 입력 필드 스타일 */
+/* 검색 '입력' 필드 스타일 */
 #searchInput::placeholder {
   color: #ffffff;
 }
@@ -120,8 +149,8 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #e1e3fe;
+  color: #000000;
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -129,13 +158,16 @@ button {
 }
 
 button:hover {
-  background-color: #333333;
+  background-color: ffffff;
 }
 
 /* 검색 결과 및 추천 검색어 컨테이너 스타일 */
 #results,
 #suggestions {
+  color: #00021d;
   margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
 }
 
 #suggestions {
@@ -145,8 +177,8 @@ button:hover {
 }
 
 .suggestion-item {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #e6e9ff;
+  color: #000000;
   border-radius: 5px;
   padding: 5px 10px;
   margin: 5px;
@@ -173,7 +205,7 @@ button:hover {
 }
 
 .footer {
-  background-color: #000000; /* 하단 바 배경 색상 */
+  background-color: #ffffff; /* 하단 바 배경 색상 */
   height: 50px; /* 하단 바 높이 설정 */
   width: 100%;
   position: fixed; /* 하단 바를 화면 하단에 고정 */
@@ -183,7 +215,7 @@ button:hover {
   display: flex;
   justify-content: center; /* 텍스트를 중앙에 정렬 */
   align-items: center; /* 텍스트를 수직으로 중앙 정렬 */
-  color: #ffffff; /* 텍스트 색상 */
+  color: #373c43; /* 텍스트 색상 */
   font-size: 14px; /* 텍스트 크기 */
   font-family: "Jua";
 }
