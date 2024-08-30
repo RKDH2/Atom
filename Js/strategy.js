@@ -46,6 +46,14 @@ const data = [
     title: "화살",
     description: "화살 발사된 후 4초 후 사라짐 (초장거리 X)",
   },
+  {
+    title: "회복",
+    description: "1번키 누르면회복 (3회 가능)",
+  },
+  {
+    title: "리스폰",
+    description: "오른쪽 키패드에서 엔터(Enter) 누르면 다시시작",
+  },
 ];
 
 // 검색어 입력 시 보여줄 제안 목록
@@ -56,6 +64,9 @@ const suggestionsData = [
   "슬라임",
   "골렘-중간보스",
   "최종보스",
+  "처치-중간보스",
+  "칼-성능",
+  "화살",
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
