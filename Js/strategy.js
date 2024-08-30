@@ -67,6 +67,8 @@ const suggestionsData = [
   "처치-중간보스",
   "칼-성능",
   "화살",
+  "회복",
+  "리스폰",
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
